@@ -1,0 +1,68 @@
+{
+  "employees": {
+    "table_name": "employees",
+    "column_names": [
+      "employee_id",
+      "name",
+      "position",
+      "salary",
+      "department_id",
+      "hire_date"
+    ],
+    "column_types": [
+      "number",
+      "text",
+      "text",
+      "number",
+      "number",
+      "text"
+    ]
+  },
+  "departments": {
+    "table_name": "departments",
+    "column_names": [
+      "department_id",
+      "name",
+      "location",
+      "budget"
+    ],
+    "column_types": [
+      "number",
+      "text",
+      "text",
+      "number"
+    ]
+  },
+  "projects": {
+    "table_name": "projects",
+    "column_names": [
+      "project_id",
+      "name",
+      "start_date",
+      "end_date",
+      "budget",
+      "department_id"
+    ],
+    "column_types": [
+      "number",
+      "text",
+      "text",
+      "text",
+      "number",
+      "number"
+    ]
+  },
+  "employee_projects": {
+    "table_name": "employee_projects",
+    "column_names": [
+      "employee_id",
+      "project_id",
+      "role"
+    ],
+    "column_types": [
+      "number",
+      "number",
+      "text"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "db_id": "employees",
+    "question": "List all employees with their departments.",
+    "query": "SELECT e.name, d.name FROM employees e JOIN departments d ON e.department_id = d.department_id;"
+  },
+  {
+    "db_id": "employees",
+    "question": "Find employees with salary greater than 100000.",
+    "query": "SELECT name, salary FROM employees WHERE salary > 100000;"
+  },
+  {
+    "db_id": "employees",
+    "question": "What is the average salary in each department?",
+    "query": "SELECT d.name, AVG(e.salary) as avg_salary FROM employees e JOIN departments d ON e.department_id = d.department_id GROUP BY d.name;"
+  },
+  {
+    "db_id": "employees",
+    "question": "List employees working on the Mobile App Development project.",
+    "query": "SELECT e.name, ep.role FROM employees e JOIN employee_projects ep ON e.employee_id = ep.employee_id JOIN projects p ON ep.project_id = p.project_id WHERE p.name = 'Mobile App Development';"
+  },
+  {
+    "db_id": "employees",
+    "question": "Show departments and their total budget allocation including project budgets.",
+    "query": "SELECT d.name, d.budget + COALESCE(SUM(p.budget), 0) as total_budget FROM departments d LEFT JOIN projects p ON d.department_id = p.department_id GROUP BY d.department_id;"
+  }
+]
