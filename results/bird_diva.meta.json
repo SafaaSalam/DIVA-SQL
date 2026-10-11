@@ -1,0 +1,10 @@
+{
+  "benchmark": "bird",
+  "system": "diva",
+  "model": "gemini-flash-lite-latest",
+  "n": 200,
+  "sample": 200,
+  "seed": 42,
+  "use_evidence": false,
+  "started": "2026-09-25 20:14:55"
+}

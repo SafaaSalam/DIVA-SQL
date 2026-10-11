@@ -1,0 +1,10 @@
+{
+  "benchmark": "spider",
+  "system": "diva",
+  "model": "gemini-flash-lite-latest",
+  "n": 200,
+  "sample": 200,
+  "seed": 42,
+  "use_evidence": false,
+  "started": "2026-09-25 19:10:32"
+}

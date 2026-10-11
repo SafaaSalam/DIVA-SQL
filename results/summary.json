@@ -1,0 +1,84 @@
+{
+  "bird": {
+    "n_common": 200,
+    "systems": {
+      "plain": {
+        "n": 200,
+        "correct": 82,
+        "ex": 0.41,
+        "ci95": [
+          0.3418353816118655,
+          0.47816461838813445
+        ],
+        "mean_latency_s": 121.8028,
+        "llm_calls_per_q": 0.965,
+        "tokens_per_q": 405.13,
+        "by_category": {
+          "simple_selection": {
+            "n": 19,
+            "ex": 0.5263157894736842
+          },
+          "single_join": {
+            "n": 113,
+            "ex": 0.4247787610619469
+          },
+          "multiple_joins": {
+            "n": 33,
+            "ex": 0.45454545454545453
+          },
+          "aggregation": {
+            "n": 24,
+            "ex": 0.20833333333333334
+          },
+          "nested": {
+            "n": 11,
+            "ex": 0.36363636363636365
+          }
+        },
+        "pred_executes": 0.93
+      }
+    },
+    "mcnemar": {}
+  },
+  "spider": {
+    "n_common": 200,
+    "systems": {
+      "plain": {
+        "n": 200,
+        "correct": 155,
+        "ex": 0.775,
+        "ci95": [
+          0.7171260421260132,
+          0.8328739578739869
+        ],
+        "mean_latency_s": 8.759570000000002,
+        "llm_calls_per_q": 1.0,
+        "tokens_per_q": 204.155,
+        "by_category": {
+          "simple_selection": {
+            "n": 55,
+            "ex": 0.8545454545454545
+          },
+          "single_join": {
+            "n": 58,
+            "ex": 0.7758620689655172
+          },
+          "multiple_joins": {
+            "n": 9,
+            "ex": 0.4444444444444444
+          },
+          "aggregation": {
+            "n": 50,
+            "ex": 0.8
+          },
+          "nested": {
+            "n": 28,
+            "ex": 0.6785714285714286
+          }
+        },
+        "pred_executes": 0.995
+      }
+    },
+    "mcnemar": {}
+  }
+}
