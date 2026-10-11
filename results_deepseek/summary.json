@@ -1,0 +1,183 @@
+{
+  "bird": {
+    "n_common": 200,
+    "systems": {
+      "diva": {
+        "n": 200,
+        "correct": 72,
+        "ex": 0.36,
+        "ci95": [
+          0.2934753940259696,
+          0.42652460597403036
+        ],
+        "mean_latency_s": 100.96621999999999,
+        "llm_calls_per_q": 17.56,
+        "tokens_per_q": 34987.74,
+        "by_category": {
+          "simple_selection": {
+            "n": 19,
+            "ex": 0.5789473684210527
+          },
+          "single_join": {
+            "n": 113,
+            "ex": 0.34513274336283184
+          },
+          "multiple_joins": {
+            "n": 33,
+            "ex": 0.36363636363636365
+          },
+          "aggregation": {
+            "n": 24,
+            "ex": 0.16666666666666666
+          },
+          "nested": {
+            "n": 11,
+            "ex": 0.5454545454545454
+          }
+        },
+        "pred_executes": 0.865,
+        "status_counts": {
+          "SUCCESS": 191,
+          "PARTIAL_SUCCESS": 9
+        },
+        "median_dag_nodes": 4,
+        "questions_with_verification_failure": 165
+      },
+      "plain": {
+        "n": 200,
+        "correct": 80,
+        "ex": 0.4,
+        "ci95": [
+          0.33210360834330005,
+          0.4678963916567
+        ],
+        "mean_latency_s": 8.127719999999998,
+        "llm_calls_per_q": 1.005,
+        "tokens_per_q": 2083.575,
+        "by_category": {
+          "simple_selection": {
+            "n": 19,
+            "ex": 0.42105263157894735
+          },
+          "single_join": {
+            "n": 113,
+            "ex": 0.39823008849557523
+          },
+          "multiple_joins": {
+            "n": 33,
+            "ex": 0.45454545454545453
+          },
+          "aggregation": {
+            "n": 24,
+            "ex": 0.2916666666666667
+          },
+          "nested": {
+            "n": 11,
+            "ex": 0.45454545454545453
+          }
+        },
+        "pred_executes": 0.99
+      }
+    },
+    "mcnemar": {
+      "diva_vs_plain": {
+        "b": 16,
+        "c": 24,
+        "chi2": 1.225,
+        "p": 0.26838162729276077,
+        "method": "chi-square with continuity correction"
+      }
+    }
+  },
+  "spider": {
+    "n_common": 200,
+    "systems": {
+      "diva": {
+        "n": 200,
+        "correct": 144,
+        "ex": 0.72,
+        "ci95": [
+          0.6577719291637608,
+          0.7822280708362391
+        ],
+        "mean_latency_s": 76.25930500000001,
+        "llm_calls_per_q": 14.53,
+        "tokens_per_q": 24667.035,
+        "by_category": {
+          "simple_selection": {
+            "n": 55,
+            "ex": 0.8363636363636363
+          },
+          "single_join": {
+            "n": 58,
+            "ex": 0.6896551724137931
+          },
+          "multiple_joins": {
+            "n": 9,
+            "ex": 0.3333333333333333
+          },
+          "aggregation": {
+            "n": 50,
+            "ex": 0.74
+          },
+          "nested": {
+            "n": 28,
+            "ex": 0.6428571428571429
+          }
+        },
+        "pred_executes": 0.935,
+        "status_counts": {
+          "SUCCESS": 191,
+          "PARTIAL_SUCCESS": 8,
+          "FAILURE": 1
+        },
+        "median_dag_nodes": 3,
+        "questions_with_verification_failure": 145
+      },
+      "plain": {
+        "n": 200,
+        "correct": 152,
+        "ex": 0.76,
+        "ci95": [
+          0.7008092980274774,
+          0.8191907019725226
+        ],
+        "mean_latency_s": 3.4202499999999993,
+        "llm_calls_per_q": 1.01,
+        "tokens_per_q": 790.375,
+        "by_category": {
+          "simple_selection": {
+            "n": 55,
+            "ex": 0.8545454545454545
+          },
+          "single_join": {
+            "n": 58,
+            "ex": 0.7068965517241379
+          },
+          "multiple_joins": {
+            "n": 9,
+            "ex": 0.7777777777777778
+          },
+          "aggregation": {
+            "n": 50,
+            "ex": 0.76
+          },
+          "nested": {
+            "n": 28,
+            "ex": 0.6785714285714286
+          }
+        },
+        "pred_executes": 0.995
+      }
+    },
+    "mcnemar": {
+      "diva_vs_plain": {
+        "b": 9,
+        "c": 17,
+        "chi2": 1.8846153846153846,
+        "p": 0.16981050508552153,
+        "method": "chi-square with continuity correction"
+      }
+    }
+  }
+}
